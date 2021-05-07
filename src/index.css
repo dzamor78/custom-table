@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container { 
+   display: flex;
+   flex-direction: column;
+   
+   width: 100%;
+}
+
+.table-header {
+  background:rgb(56, 13, 92);
+  color: white;
+  height: 3rem;
+  
+}
+
+.table-header > div{ 
+  align-self: center;
+}
+.row {   
+  display: flex;
+  flex-direction: row;
+}
+
+.row:nth-child(2n-2) {
+  background:rgb(241, 241, 241)
+}
+
+.row:last-child {
+  background: rgb(184, 183, 184);
+}
+
+
+.row > div , .row > input, .row > button{
+ flex:1;
+  align-self: center;
+  margin: .25rem .75rem .5rem .25rem;
+  font-size: .75rem;
+ 
+}
+
+div.desc {  width: 40%; margin-left: 1.5rem;}
+.desc-header { width: 50%}
+
+input:invalid:required {
+  border: 1px solid rgb(207, 2, 2);
+}
+
+input:valid {
+  border: 1px solid rgb(78, 78, 78);
+}
+
+input, button {
+  height: 2rem;
+  margin: .5rem 1rem;
+  border-radius: .3rem;
+}
+
+button {
+  background:rgb(145, 145, 145);
+  color: white;
+  border: 0;
+}
+button:hover {
+  background:rgb(177, 176, 176);
+  color: rgb(73, 71, 71);
+}
+
+.delete { 
+  background:rgb(117, 16, 16);
+  color: rgb(243, 234, 115);
+}
+.delete:hover { 
+  background:rgb(131, 17, 17);
+  color: rgb(243, 234, 115);
+}
+
+input[type=submit] {
+  background:rgb(107, 107, 107);
+  color: rgb(210, 211, 169);
+  border: 0;
+  min-height: 3rem;
+  font-size: 1rem;
+}
+
+input {
+  font-size: 1rem;
+  color:rgb(27, 59, 90);
+}
+
+textarea {
+  width: 60%;
+  margin: .5rem;
+}
+
+
+
